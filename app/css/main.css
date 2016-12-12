@@ -2,7 +2,7 @@
   background-image: url("../img/photo.png");
   background-color: #e6d7d7;
   background-size: cover;
-  repeate: no-repeate; }
+  background-repeat: no-repeat; }
   .photoView__widget {
     padding: 0;
     z-index: 30;
