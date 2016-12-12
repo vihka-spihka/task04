@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="Viktoriya Knyazeva">
+		<title>Виджет</title>
+
+	<!-- Bootstrap -->
+		<link href="css/libs.min.css" rel="stylesheet">
+	<!-- Dev style -->
+		<link href="css/main.css" rel="stylesheet">
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="container-fluid photoView">
+			<div class="row">
+				<div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 photoView__widget">
+
+					<div class="row">
+						<div class="col-xs-12 widget__picture">
+							<img src="img/photo.png" class="widget__picture--img">
+						</div>
+					</div>
+					<div class="widget__capture">
+						
+						<div class="row capture__title">
+							<div class="col-xs-12">
+								Matilda
+							</div>
+						</div>
+
+						<div class="row capture__actions">
+							<div class="col-xs-4 col-sm-3 capture__actions--retweetsNum">
+								<span class="glyphicon glyphicon-retweet"></span>
+								<span>26</span>
+							</div>
+							<div class="col-xs-4 col-sm-3 capture__actions--likesNum">
+								<span class="glyphicon glyphicon-heart"></span>
+								<span>10</span>
+							</div>
+							<div class="col-xs-4 col-sm-3 capture__actions--commentsNum">
+								<span class="glyphicon glyphicon-comment"></span>
+								<span>1</span>
+							</div>
+						</div>
+
+						<div class="row capture__pinnedFrom">
+							<div class="col-xs-12">
+								Pinned from <a href="http://uncovet.com" class="capture__pinnedFrom--link" title="Site uncovet.com">uncovet.com</a>
+							</div>
+						</div>
+
+						<div class="row capture__commentsBlock">
+							<div class="row capture__commentsBlock--published">
+								<div class="col-xs-12">
+									<div class="row commentsBlock__commentElem">
+										<div class="col-xs-12 media">
+											<div class="media-left">
+												<img src="img/avatar_woman.png" class="media-object commentElem__avatar" alt="Woman avatar">
+											</div>
+											<div class="media-body">
+												<div class="commentElem__userName">
+													<a href="#" title="Woman page">Hannah Kern</a>
+												</div>
+												<div class="commentElem__message">
+													Thats SWEEEEEEET!
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="row commentsBlock__commentElem">
+										<div class="col-xs-12 media">
+											<div class="media-left">
+												<img src="img/avatar_man.png" class="media-object commentElem__avatar" alt="Man avatar">
+											</div>
+											<div class="media-body">
+												<div class="commentElem__userName">
+													<a href="#" title="Woman page">Jhon Smith</a>
+												</div>
+												<div class="commentElem__message">
+													I like it!
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="row commentsBlock__commentElem">
+										<div class="col-xs-12 media">
+											<div class="media-left">
+												<img src="img/avatar_woman.png" class="media-object commentElem__avatar" alt="Woman avatar">
+											</div>
+											<div class="media-body">
+												<div class="commentElem__userName">
+													<a href="#" title="Woman page">Hannah Kern</a>
+												</div>
+												<div class="commentElem__message">
+													И тут неожиданно я выучила русский язык<br>
+													Бла-бла-бла<br>Бла-бла-бла<br>Бла-бла-бла<br>Возможно, след.строчку ты уже не увидишь<br>Бла-бла-бла<br>Бла-бла-бла<br>Бла-бла-бла<br>Бла-бла-бла<br>Или эту<br>Бла-бла-бла<br>Бла-бла-бла<br>Бла-бла-бла<br>Бла-бла-бла<br>Бла-бла-бла<br>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row capture__commentsBlock--new">
+								<div class="col-xs-12 media">
+									<form class="commentsBlock__newComment">
+										<div class="media-left">
+											<img src="img/avatar_man.png" class="media-object newComment__avatar" alt="Man avatar">
+										</div>
+										<div class="media-body">
+											<div class="form-group">
+												<textarea class="form-control newComment__textarea" rows="3" maxlength="500" placeholder="Add comment... (max 500 symbols)">Eyes looks </textarea>
+											
+												<button type="button" class="btn btn-danger newComment__button">Add</button>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>						
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/libs.min.js"></script>
+	</body>
+</html>

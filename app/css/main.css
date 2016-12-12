@@ -1,0 +1,113 @@
+.photoView {
+  background-image: url("../img/photo.png");
+  background-color: #e6d7d7;
+  background-size: cover;
+  repeate: no-repeate; }
+  .photoView__widget {
+    padding: 0;
+    z-index: 30;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    background-color: white;
+    border-radius: 4px 4px 4px 4px; }
+
+.widget__picture--img {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  border-radius: 4px 4px 0 0; }
+
+.capture__title {
+  font-size: 1.4em;
+  font-weight: bold;
+  padding: 5% 5% 1% 5%;
+  margin: 0;
+  border-left: 1px solid #c1c1c1;
+  border-right: 1px solid #c1c1c1; }
+
+.capture__actions {
+  padding: 0 5% 5% 5%;
+  margin: 0;
+  border-left: 1px solid #c1c1c1;
+  border-right: 1px solid #c1c1c1; }
+  .capture__actions--retweetsNum {
+    color: #c1c1c1; }
+  .capture__actions--likesNum {
+    color: #c1c1c1; }
+  .capture__actions--commentsNum {
+    color: #c1c1c1; }
+
+.capture__pinnedFrom {
+  padding: 5% 0 5% 0;
+  margin: 0;
+  border: 1px solid #c1c1c1;
+  color: #c1c1c1;
+  font-size: 1.0em; }
+  .capture__pinnedFrom--link {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.0em; }
+    .capture__pinnedFrom--link:hover {
+      color: #2194da;
+      text-decoration: none; }
+    .capture__pinnedFrom--link:visited {
+      color: black; }
+
+.capture__commentsBlock {
+  background-color: #f5f5f5;
+  border-left: 1px solid #c1c1c1;
+  border-right: 1px solid #c1c1c1;
+  border-bottom: 1px solid #c1c1c1;
+  border-radius: 0 0 4px 4px;
+  padding: 5%;
+  margin: 0;
+  overflow-x: hidden; }
+  .capture__commentsBlock--published {
+    overflow-y: auto;
+    max-height: 300px; }
+
+.actions__elem {
+  color: #c1c1c1; }
+
+.commentsBlock__commentElem {
+  margin-bottom: 10px; }
+
+.commentsBlock__newComment .form-group {
+  margin-bottom: 0;
+  padding-top: 10px; }
+
+.commentElem__avatar {
+  padding-top: 5px; }
+
+.commentElem__userName a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em; }
+  .commentElem__userName a:hover {
+    color: #2194da;
+    text-decoration: none; }
+  .commentElem__userName a:visited {
+    color: black; }
+
+.commentElem__message {
+  font-size: 0.9em;
+  margin-top: 2px; }
+
+.newComment__avatar {
+  padding-top: 10px; }
+
+.newComment__textarea {
+  margin-bottom: 10px;
+  overflow: hidden;
+  resize: none;
+  font-size: 0.9em; }
+
+.newComment__button {
+  width: 30%;
+  float: right; }
+
+@media (max-width: 768px) {
+  .newComment__button {
+    width: 50%; } }

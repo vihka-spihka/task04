@@ -1,0 +1,181 @@
+@mixin linksStyle {
+	color: black;
+	text-decoration: none;
+	font-weight: bold;
+	&:hover {
+		color: #2194da;
+		text-decoration: none;
+	}
+
+	&:visited {
+		color: black;
+	}
+}
+
+.photoView {
+	
+	background: {
+		image: url('../img/photo.png');
+		color: #e6d7d7;
+		size: cover;
+	}
+	repeate: no-repeate;
+
+	&__widget {
+		padding: 0;
+		z-index: 30;
+		margin: {
+			top: 3%;
+			bottom: 3%;
+		}
+		background-color: white;
+		border-radius: 4px 4px 4px 4px;
+	}
+}
+
+.widget {
+
+	&__picture {
+		&--img {
+			width: 100%;
+			margin: {
+				left: 0;
+				right: 0;
+			}
+			border-radius: 4px 4px 0 0;
+		}
+	}
+
+	&__capture {}
+}
+
+.capture {
+
+	&__title {
+		font: {
+			size: 1.4em;
+			weight: bold;
+		}
+		padding: 5% 5% 1% 5%;
+		margin: 0;
+		border-left: 1px solid #c1c1c1;
+		border-right: 1px solid #c1c1c1;
+	}
+
+	&__actions {
+
+		padding: 0 5% 5% 5%;
+		margin: 0;
+		border-left: 1px solid #c1c1c1;
+		border-right: 1px solid #c1c1c1;
+
+		&--retweetsNum {
+			color: #c1c1c1;
+		}
+
+		&--likesNum {
+			color: #c1c1c1;
+		}
+
+		&--commentsNum {
+			color: #c1c1c1;
+		}
+	}
+
+	&__pinnedFrom {
+
+		padding: 5% 0 5% 0;
+		margin: 0;
+		border: 1px solid #c1c1c1;
+		color: #c1c1c1;
+		font-size: 1.0em;
+
+		&--link {
+			@include linksStyle;
+			font-size: 1.0em;
+		}
+	}
+
+	&__commentsBlock {
+		background-color: #f5f5f5;
+		border-left: 1px solid #c1c1c1;
+		border-right: 1px solid #c1c1c1;
+		border-bottom: 1px solid #c1c1c1;
+		border-radius: 0 0 4px 4px;
+		padding: 5%;
+		margin: 0;
+		overflow-x: hidden;
+
+		&--published {
+			overflow-y: auto;
+			max-height: 300px;
+		}
+
+		&__new {}
+	}
+}
+
+.actions {
+	&__elem {
+		color: #c1c1c1;
+	}
+}
+
+.commentsBlock {
+	
+	&__commentElem {
+		margin-bottom: 10px;
+	}
+
+	&__newComment {
+		& .form-group {
+			margin-bottom: 0;
+			padding-top:10px;
+		}
+	}
+}
+
+.commentElem {
+
+	&__avatar {
+		padding-top: 5px;
+	}
+
+	&__userName {
+		& a {
+			@include linksStyle;
+			font-size: 1.1em;
+		}
+	}
+
+	&__message {
+		font-size: 0.9em;
+		margin-top: 2px;
+	}
+}
+
+.newComment {
+	
+	&__avatar {
+		padding-top:10px;
+	}
+
+	&__textarea {
+		margin-bottom: 10px;
+		overflow: hidden;
+		resize: none;
+		font-size: 0.9em;
+	}
+
+	&__button {
+		width: 30%;
+		float: right;
+	}
+}
+
+@media (max-width: 768px) {
+	
+	.newComment__button {
+		width: 50%;
+	}
+}
